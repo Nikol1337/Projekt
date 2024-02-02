@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Wybierz prawidłową odpowiedź"
+android:id="@+id/poczatek"
+    android:layout_marginTop="16dp"
+    android:layout_centerHorizontal="true"
+    />
+    <!-- TextView do wyświetlania pytania -->
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pytanie tutaj"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/poczatek"/>
+
+    <!-- Przykładowe opcje odpowiedzi jako Button -->
+    <Button
+        android:id="@+id/option1Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Opcja 1"
+        android:layout_below="@id/questionTextView"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/option2Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Opcja 2"
+        android:layout_below="@id/option1Button"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/efekt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170dp"/>
+
+
+    <!-- Inne opcje odpowiedzi... -->
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_below="@id/option2Button"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="60dp"/>
+
+
+    <ImageButton
+        android:id="@+id/exitButton"
+        android:layout_width="56dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="340dp"
+        android:background="@null"
+        android:contentDescription="Exit Button"
+
+        android:scaleType="fitCenter"
+        android:src="@drawable/exit"
+        app:tint="@color/black" />
+
+
+</RelativeLayout>
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioButtonTestEnPl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Angielsko-Polski" />
+
+            <RadioButton
+                android:id="@+id/radioButtonTestPlEn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Polsko-Angielski" />
+
+            <!-- Dodaj więcej RadioButton dla innych testów, jeśli są potrzebne. -->
+
+        </RadioGroup>
+    </RelativeLayout>
+
+

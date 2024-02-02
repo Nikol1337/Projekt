@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="15dp"
+    android:id="@+id/obok"
+
+
+    >
+
+    <include layout="@layout/vocabulary_include" />
+
+    <ImageView
+        android:id="@+id/centerImageView"
+        android:scaleType="fitCenter"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="25dp"> <!-- Możesz dostosować marginesy w zależności od potrzeb -->
+    </ImageView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/centerImageView"
+        android:layout_marginLeft="120dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toRightOf="@id/centerImageView"
+        app:elevation="2dp"
+        app:layout_anchor="@id/obok"
+        app:layout_anchorGravity="bottom|end"
+        app:srcCompat="@drawable/baseline_photo_camera" />
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MenuActivity"
+android:background="#D4C9D6"
+
+
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="60dp"
+        android:text="NaukaToKlucz"
+        android:textSize="60dp"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:shadowColor="#9C27B0"
+    android:shadowDx="2"
+    android:shadowDy="2"
+    android:shadowRadius="10"
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="80dp"
+        android:text="Poznaj nowe słowo"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:shadowColor="#2E0735"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="10"
+        />
+    <Button
+        android:id="@+id/yt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="560dp"
+        android:layout_marginLeft="40dp"
+
+        android:text="Go to yt" />
+
+    <FrameLayout
+        android:layout_width="360dp"
+        android:layout_height="260dp"
+        android:layout_centerInParent="true"
+        android:background="#ffffff"
+        android:elevation="5dp">
+
+        <TextView
+            android:id="@+id/textWordOfTheDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Poznaj nowe słowo"
+            android:textColor="#333333"
+            style="@style/MyCustomTextStyle"
+            android:textSize="24sp" />
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="350dp"
+            android:layout_height="183dp" >
+
+        </FrameLayout>
+    </FrameLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_nav_menu2"
+        app:labelVisibilityMode="labeled"
+        />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    android:background="@color/pinkMedium"
+    >
+
+        <item
+            android:id="@+id/navigation_home"
+            android:title="Home"
+            />
+        <item
+            android:id="@+id/navigation_test"
+            android:title="Test" />
+        <item
+            android:id="@+id/navigation_slownik"
+            android:title="Słownik" />
+        <item
+            android:id="@+id/navigation_slowka"
+            android:title="Twoje słówka" />
+
+
+</menu>

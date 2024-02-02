@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="#A48AEA" /> <!-- Kolor tła -->
+            <corners android:radius="35dp" /> <!-- Ustaw odpowiednią wartość promienia -->
+        </shape>
+    </item>
+</selector>
+

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+        <item
+            android:id="@+id/nav_home"
+            android:title="Słownik-Wyszukaj słówko"
+            android:layout_marginStart="20dp"
+                style="@MyMenuItemStyle"
+            />
+
+
+        <item
+            android:id="@+id/nav_settings"
+            android:title="Nauka"
+
+           >
+
+        <menu >
+                <group android:id="@+id/submenu_group">
+                <item
+                    android:id="@+id/fiszki"
+                    android:title="Fiszki"
+
+
+                   />
+                <item
+                    android:id="@+id/gra"
+                    android:title="Gra"
+
+
+                    />
+                <!-- Dodaj więcej podpunktów, jeśli potrzebujesz -->
+                </group>
+        </menu>
+        </item>
+
+
+
+
+
+
+
+        <!-- Dodaj więcej pozycji menu według potrzeb -->
+
+</menu>
